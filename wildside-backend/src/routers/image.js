@@ -15,7 +15,7 @@ router.get('/', function (req, res) {
     let filehandle;
     try {
         console.log(fs.realpathSync("../media"))
-        filehandle = await fsPromises.open('../media/images/image.jpeg', 'r');
+        filehandle = await fsPromises.open('../media/images/image.jpg', 'r');
         res.sendFile(filehandle)
     } finally {
         if (filehandle !== undefined)
