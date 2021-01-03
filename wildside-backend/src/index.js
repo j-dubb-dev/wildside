@@ -6,5 +6,5 @@ const port = 8080;
 app.use("/post", posts);
 app.use("/image", images);
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Example app listening at http://0.0.0.0:${port}`)
   })
